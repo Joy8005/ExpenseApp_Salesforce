@@ -1,4 +1,4 @@
-public class TotalExpensesClass {
+public class ExpApp_TotalExpensesClass {
     @AuraEnabled
     public Decimal getTotalExpenses(){
         AggregateResult expenses = [SELECT SUM(Total_Expense__c)totalExpense FROM Expense_Item__c];

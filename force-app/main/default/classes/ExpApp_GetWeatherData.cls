@@ -1,4 +1,4 @@
-public class GetWeatherData {
+public class ExpApp_GetWeatherData {
     private static String getWeatherJson(String url, String jsonKey) {
         HttpRequest req = new HttpRequest();
         req.setEndpoint(url);

@@ -1,4 +1,4 @@
-global class SpendControlEmail implements Queueable {
+global class ExpApp_SpendControlEmail implements Queueable {
     
    	private List<Expense__c> thisExpenses;
     //class constructor to initiate list into 'thisExpenses'
