@@ -63,8 +63,8 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>lwcCalculator</componentName>
-                <identifier>lwcCalculator</identifier>
+                <componentName>expApp_lwcCalculator</componentName>
+                <identifier>expApp_lwcCalculator</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
