@@ -109,7 +109,7 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>My_Expenses</name>
+        <name>ExpApp_My_Expenses</name>
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>

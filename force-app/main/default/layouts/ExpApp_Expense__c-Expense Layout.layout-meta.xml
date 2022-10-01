@@ -12,15 +12,15 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Expense_Item__c</field>
+                <field>ExpApp_Expense_Item__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Expense_Date__c</field>
+                <field>ExpApp_Expense_Date__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Expense_Amount__c</field>
+                <field>ExpApp_Expense_Amount__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns/>
