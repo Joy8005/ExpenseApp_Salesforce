@@ -1,8 +1,8 @@
 global class ExpApp_SpendControlEmail implements Queueable {
     
-   	private List<Expense__c> thisExpenses;
+   	private List<ExpApp_Expense__c> thisExpenses;
     //class constructor to initiate list into 'thisExpenses'
-    public SpendControlEmail(List<Expense__c> allexpenses) {
+    public SpendControlEmail(List<ExpApp_Expense__c> allexpenses) {
         this.thisExpenses = allexpenses;
     }
     public void execute(QueueableContext context){
@@ -15,7 +15,7 @@ global class ExpApp_SpendControlEmail implements Queueable {
         
         
         //for each new trigger 
-        for(Expense__c myExpense : thisExpenses){
+        for(ExpApp_Expense__c myExpense : thisExpenses){
             // check if the total expenses is greater than or equal to spend control value
             if((totalExpense + myExpense.Expense_Amount__c) >= spendControl){ 
                 // get the email Id of the user who created the record

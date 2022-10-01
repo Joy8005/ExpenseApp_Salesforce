@@ -271,7 +271,7 @@
         <isCollection>false</isCollection>
         <isInput>false</isInput>
         <isOutput>false</isOutput>
-        <objectType>Expense__c</objectType>
+        <objectType>ExpApp_Expense__c</objectType>
     </variables>
     <variables>
         <name>ExpenseItem</name>

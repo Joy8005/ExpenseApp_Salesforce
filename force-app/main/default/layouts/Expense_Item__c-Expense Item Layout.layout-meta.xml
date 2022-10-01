@@ -77,7 +77,7 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <relatedList>Expense__c.Expense_Item__c</relatedList>
+        <relatedList>ExpApp_Expense__c.ExpApp_Expense_Item__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

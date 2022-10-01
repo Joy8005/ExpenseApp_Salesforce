@@ -3,8 +3,8 @@
     <fullName>Total_Expense__c</fullName>
     <externalId>false</externalId>
     <label>Total Expense</label>
-    <summarizedField>Expense__c.Expense_Amount__c</summarizedField>
-    <summaryForeignKey>Expense__c.Expense_Item__c</summaryForeignKey>
+    <summarizedField>ExpApp_Expense__c.ExpApp_Expense_Amount__c</summarizedField>
+    <summaryForeignKey>ExpApp_Expense__c.ExpApp_Expense_Item__c</summaryForeignKey>
     <summaryOperation>sum</summaryOperation>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

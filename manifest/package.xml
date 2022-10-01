@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
   <types>
-    <members>expenseController</members>
-    <members>ExpenseItemEmailTemplateController</members>
+    <members>ExpApp_ExpenseController</members>
+    <members>ExpApp_ExpenseItemEmailTemplateController</members>
     <members>ExpensesOverview</members>
     <members>GetWeatherData</members>
     <members>IBMWeather_Controller</members>
@@ -12,7 +12,7 @@
     <name>ApexClass</name>
   </types>
   <types>
-    <members>ExpenseItemEmailTemplate</members>
+    <members>ExpApp_ExpenseItemEmailTemplate</members>
     <name>ApexComponent</name>
   </types>
   <types>
@@ -26,10 +26,10 @@
   </types>
   <types>
     <members>ExpesnesOverview</members>
-    <members>GetDetailedExpenses</members>
+    <members>ExpApp_GetDetailedExpenses</members>
     <members>IBMWeather_Current</members>
     <members>LightningDataTableExpensesDemo</members>
-    <members>TotalExpenses</members>
+    <members>ExpApp_TotalExpenses</members>
     <members>WeatherInfo</members>
     <name>AuraDefinitionBundle</name>
   </types>
@@ -38,21 +38,21 @@
     <name>CustomApplication</name>
   </types>
   <types>
-    <members>Expense__c.Expense_Amount__c</members>
-    <members>Expense__c.Expense_Date__c</members>
-    <members>Expense__c.Expense_Item__c</members>
+    <members>ExpApp_Expense__c.Expense_Amount__c</members>
+    <members>ExpApp_Expense__c.Expense_Date__c</members>
+    <members>ExpApp_Expense__c.Expense_Item__c</members>
     <members>Expense_Item__c.Total_Expense__c</members>
     <members>Expense_Spend_Control__c.Spend_Control__c</members>
     <name>CustomField</name>
   </types>
   <types>
-    <members>Expense__c</members>
+    <members>ExpApp_Expense__c</members>
     <members>Expense_Item__c</members>
     <members>Expense_Spend_Control__c</members>
     <name>CustomObject</name>
   </types>
   <types>
-    <members>Expense__c</members>
+    <members>ExpApp_Expense__c</members>
     <members>Expense_Item__c</members>
     <members>Expense_Page</members>
     <members>Expense_Spend_Control__c</members>
@@ -65,7 +65,7 @@
   </types>
   <types>
     <members>unfiled$public</members>
-    <members>unfiled$public/Expense_Alert</members>
+    <members>unfiled$public/ExpApp_Expense_Alert</members>
     <name>EmailTemplate</name>
   </types>
   <types>
@@ -86,7 +86,7 @@
     <name>FlowDefinition</name>
   </types>
   <types>
-    <members>Expense__c-Expense Layout</members>
+    <members>ExpApp_Expense__c-Expense Layout</members>
     <members>Expense_Item__c-Expense Item App Layout</members>
     <members>Expense_Item__c-Expense Item Layout</members>
     <members>Expense_Spend_Control__c-Expense Spend Control Layout</members>
@@ -97,7 +97,7 @@
     <name>LightningComponentBundle</name>
   </types>
   <types>
-    <members>Expense__c.All</members>
+    <members>ExpApp_Expense__c.All</members>
     <members>Expense_Item__c.All</members>
     <members>Expense_Spend_Control__c.All</members>
     <name>ListView</name>
@@ -117,12 +117,8 @@
     <name>StaticResource</name>
   </types>
   <types>
-    <members>Expense__c</members>
+    <members>ExpApp_Expense__c</members>
     <name>Workflow</name>
-  </types>
-  <types>
-    <members>Expense__c.This_is_the_new_Email</members>
-    <name>WorkflowAlert</name>
   </types>
   <version>55.0</version>
 </Package>
