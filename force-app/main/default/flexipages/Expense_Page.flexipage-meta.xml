@@ -9,8 +9,8 @@
         </itemInstances>
         <itemInstances>
             <componentInstance>
-                <componentName>TotalExpenses</componentName>
-                <identifier>TotalExpenses</identifier>
+                <componentName>ExpApp_TotalExpenses</componentName>
+                <identifier>ExpApp_TotalExpenses</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>

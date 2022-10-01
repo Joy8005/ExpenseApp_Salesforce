@@ -8,7 +8,7 @@ Note that any query that includes an aggregate function returns its results in a
 Aggregate functions become a more powerful tool to generate reports when you use them with a GROUP BY clause. For example, you could find the count of all opportunities for a CloseDate.
 
 */
-    public ExpenseItemEmailTemplateController()
+    public ExpApp_ExpenseItemEmailTemplateController()
     {
         lstAR = [select Name, sum(Total_Expense__c) totalExpense 
                                                from Expense_Item__c  

@@ -1,7 +1,7 @@
 ({
     doInit : function(component, event, helper) {
         // call the class controller methods
-        let action = component.get("c.TotalExpenses");
+        let action = component.get("c.ExpApp_TotalExpenses");
         let action2 = component.get('c.getUserInfo');
         
         //set callback and get the response from the server

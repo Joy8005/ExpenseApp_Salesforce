@@ -1,4 +1,4 @@
-<aura:component implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global" controller="expenseController">
+<aura:component implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global" controller="ExpApp_ExpenseController">
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
     <aura:attribute name="totalExpenses" type="Decimal" /> 
     <aura:attribute name="userInfo" type="user" default="{'sobjectType' : 'User'}" />

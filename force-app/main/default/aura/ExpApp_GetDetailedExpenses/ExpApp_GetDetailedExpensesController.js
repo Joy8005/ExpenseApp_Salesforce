@@ -16,7 +16,7 @@
         var createExpense = $A.get("e.force:createRecord");
         // Parameters like apiName and defaultValues are set
         createExpense.setParams({
-            "entityApiName": "Expense__c"
+            "entityApiName": "ExpApp_Expense__c"
         });
         // Event fired and new contact dialog open
         createExpense.fire();
@@ -38,7 +38,7 @@
         let eventSource = event.getSource();
         let eventId = eventSource.get("v.name");
         editRecordEvent.setParams({
-            "entityApiName": "Expense__c",
+            "entityApiName": "ExpApp_Expense__c",
             "recordId": eventId
         });
         editRecordEvent.fire();
