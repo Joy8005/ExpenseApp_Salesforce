@@ -1,4 +1,4 @@
-public class expenseController {
+public class ExpApp_ExpenseController {
     @AuraEnabled
     public static Decimal TotalExpenses(){
         AggregateResult expenses = [SELECT SUM(Total_Expense__c)totalExpense FROM Expense_Item__c];

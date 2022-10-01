@@ -1,4 +1,4 @@
-public class ExpensesOverview {
+public class ExpApp_ExpensesOverview {
     @AuraEnabled
     public static List<Decimal> getMonthExpenses(){
         Date myDate = Date.today();

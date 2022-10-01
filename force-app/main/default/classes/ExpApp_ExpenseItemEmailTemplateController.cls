@@ -1,4 +1,4 @@
-public class ExpenseItemEmailTemplateController
+public class ExpApp_ExpenseItemEmailTemplateController
 {
     public Decimal spendControl = 0.00;
     public Decimal fullExpense = 0.00;

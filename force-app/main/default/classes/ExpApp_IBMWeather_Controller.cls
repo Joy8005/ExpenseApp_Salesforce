@@ -1,4 +1,4 @@
-public class IBMWeather_Controller {
+public class ExpApp_IBMWeather_Controller {
     private static String getWeatherJson(String url, String jsonKey) {
         HttpRequest req = new HttpRequest();
         req.setEndpoint(url);
