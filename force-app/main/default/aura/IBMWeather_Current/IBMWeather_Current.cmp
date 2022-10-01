@@ -1,0 +1,49 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,force:hasRecordId" controller="IBMWeather_Controller">
+    <aura:attribute name="weatherObservationData" type="Object"></aura:attribute>
+    <aura:attribute name="weatherForecastData" type="Object[]"></aura:attribute>
+    <aura:attribute name="weatherLoaded" type="Boolean" default="false"></aura:attribute>
+    <aura:attribute name="weatherLoadedWithIcon" type="Boolean" default="false"></aura:attribute>
+    <aura:attribute name="recordId" type="Id" />
+    <aura:handler name="init" value="{!this}" action="{!c.getWeather}" />
+    <aura:if isTrue="{!v.weatherLoaded}">
+        <div class="slds-card">
+            <div class="slds-p-left_medium slds-p-right_medium">
+                <div class="temp-header">The Weather Company Data</div>
+                <br />
+                <lightning:tabset >
+                    <lightning:tab >
+                        <aura:set attribute="label">Today</aura:set>
+                        <div class="slds-grid slds-grid--vertical-align-start">
+                            <div>
+                                <aura:if isTrue="{!v.weatherLoadedWithIcon}">
+                                    <img src="{!$Resource.IBMWeatherIcons_v1+'/icon'+v.weatherObservationData.wx_icon+'.png'}" class="slds-grid--vertical-align-center temp-img-observation"></img>
+                                </aura:if>
+                            </div>
+                            <div>
+                                <div class="temp-main">{!v.weatherObservationData.temp}° F | {!v.weatherObservationData.wx_phrase}</div>
+                                <table width="300px">
+                                    <tr><td>Max / Min Temp: </td><td>{!v.weatherForecastData[0].max_temp} / {!v.weatherForecastData[0].min_temp} ° F</td></tr>
+                                    <tr><td>Humidity:  </td><td>{!v.weatherObservationData.rh} %</td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </lightning:tab>
+                    <lightning:tab >
+                        <aura:set attribute="label">Forecast</aura:set>
+                        <aura:iteration items="{!v.weatherForecastData}" var="item">
+                            <div class="slds-grid">
+                                <div>
+                                    <img src="{!$Resource.IBMWeatherIcons_v1+'/icon'+item.day.icon_code+'.png'}" class="temp-img-forecast"></img>
+                                </div>
+                                <div>
+                                    <strong>{!item.day.daypart_name}</strong><br />{!item.narrative}<br /><br />
+                                </div>
+                            </div>
+                        </aura:iteration>
+                    </lightning:tab>
+                </lightning:tabset>
+            </div>
+        </div>
+        <br />
+    </aura:if>
+</aura:component>

@@ -1,0 +1,13 @@
+.THIS{
+    
+}
+
+.THIS .expenseOverviewCurrency {
+    font-size: 23px;
+    color: red;
+}
+
+.THIS .expenseOverviewText {
+    color: grey;
+    font-size: 15px;
+}

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <name>Assign_Expense_Variables</name>
+        <label>Assign Expense Variables</label>
+        <locationX>575</locationX>
+        <locationY>303</locationY>
+        <assignmentItems>
+            <assignToReference>Expense.Expense_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Expense_Date</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Expense.Expense_Amount__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Expense_Amount</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_Expense_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Item_Variables</name>
+        <label>Assign Item Variables</label>
+        <locationX>566</locationX>
+        <locationY>49</locationY>
+        <assignmentItems>
+            <assignToReference>ExpenseItem.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Item_Name</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_Expense_Item_Record</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <name>ExpenseOnly</name>
+        <choiceText>Expense Only</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>ExpenseOnly</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>ItemAndExpense</name>
+        <choiceText>Both</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>ItemAndExpense</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>ItemOnly</name>
+        <choiceText>Item Only</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>ItemOnly</stringValue>
+        </value>
+    </choices>
+    <decisions>
+        <name>Task_Decision</name>
+        <label>Task Decision</label>
+        <locationX>151</locationX>
+        <locationY>211</locationY>
+        <defaultConnectorLabel>Add Item and Expense</defaultConnectorLabel>
+        <rules>
+            <name>Add_an_Item</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>What_would_you_like_to_add</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>ItemOnly</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Expense_Item</targetReference>
+            </connector>
+            <label>Add an Item</label>
+        </rules>
+        <rules>
+            <name>Add_an_Expense</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>What_would_you_like_to_add</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>ExpenseOnly</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_Expense</targetReference>
+            </connector>
+            <label>Add an Expense</label>
+        </rules>
+    </decisions>
+    <description>This flow allows users to add Expense Item or Expense regarding an Item.</description>
+    <dynamicChoiceSets>
+        <name>Item</name>
+        <dataType>String</dataType>
+        <displayField>Name</displayField>
+        <object>Expense_Item__c</object>
+        <outputAssignments>
+            <assignToReference>Expense.Expense_Item__c</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </dynamicChoiceSets>
+    <formulas>
+        <name>DateToday</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <interviewLabel>Flow For Expenses {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Flow For Expenses</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Create_Expense_Item_Record</name>
+        <label>Create Expense Item Record</label>
+        <locationX>804</locationX>
+        <locationY>49</locationY>
+        <connector>
+            <targetReference>Final_Screen</targetReference>
+        </connector>
+        <inputReference>ExpenseItem</inputReference>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_Expense_Record</name>
+        <label>Create Expense Record</label>
+        <locationX>799</locationX>
+        <locationY>303</locationY>
+        <connector>
+            <targetReference>Final_Screen</targetReference>
+        </connector>
+        <inputReference>Expense</inputReference>
+    </recordCreates>
+    <screens>
+        <name>Add_Expense</name>
+        <label>Add Expense</label>
+        <locationX>389</locationX>
+        <locationY>303</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Assign_Expense_Variables</targetReference>
+        </connector>
+        <fields>
+            <name>Select_Item</name>
+            <choiceReferences>Item</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Select Item</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <helpText>&lt;p&gt;Select the item that you spent money on.&lt;/p&gt;</helpText>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Expense_Date</name>
+            <dataType>Date</dataType>
+            <defaultValue>
+                <elementReference>DateToday</elementReference>
+            </defaultValue>
+            <fieldText>Expense Date</fieldText>
+            <fieldType>InputField</fieldType>
+            <helpText>&lt;p&gt;Enter the date when you made the expense on the above item.&lt;/p&gt;</helpText>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Expense_Amount</name>
+            <dataType>Currency</dataType>
+            <fieldText>Expense Amount</fieldText>
+            <fieldType>InputField</fieldType>
+            <helpText>&lt;p&gt;Enter the amount of money that you spent on the item.&lt;/p&gt;</helpText>
+            <isRequired>true</isRequired>
+            <scale>2</scale>
+        </fields>
+        <helpText>&lt;p&gt;Add your expense.&lt;/p&gt;</helpText>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Add_Expenses</name>
+        <label>Add Expenses</label>
+        <locationX>159</locationX>
+        <locationY>51</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Task_Decision</targetReference>
+        </connector>
+        <fields>
+            <name>What_would_you_like_to_add</name>
+            <choiceReferences>ItemOnly</choiceReferences>
+            <choiceReferences>ExpenseOnly</choiceReferences>
+            <choiceReferences>ItemAndExpense</choiceReferences>
+            <dataType>String</dataType>
+            <defaultSelectedChoiceReference>ExpenseOnly</defaultSelectedChoiceReference>
+            <fieldText>What would you like to add?</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Expense_Item</name>
+        <label>Expense Item</label>
+        <locationX>391</locationX>
+        <locationY>49</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Assign_Item_Variables</targetReference>
+        </connector>
+        <fields>
+            <name>Item_Name</name>
+            <dataType>String</dataType>
+            <fieldText>Item Name</fieldText>
+            <fieldType>InputField</fieldType>
+            <helpText>&lt;p&gt;Enter the name of the item you want to add.&lt;/p&gt;</helpText>
+            <isRequired>true</isRequired>
+            <validationRule>
+                <errorMessage>&lt;p&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;Field cannot be a number.&lt;/span&gt;&lt;/p&gt;</errorMessage>
+                <formulaExpression>NOT(ISNUMBER({!Item_Name}))</formulaExpression>
+            </validationRule>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Final_Screen</name>
+        <label>Final Screen</label>
+        <locationX>962</locationX>
+        <locationY>180</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>SuccessMessage</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(0, 134, 74); font-size: 20px;&quot;&gt;Wohooo, Record added successfully!&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <startElementReference>Add_Expenses</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>Expense</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Expense__c</objectType>
+    </variables>
+    <variables>
+        <name>ExpenseItem</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Expense_Item__c</objectType>
+    </variables>
+</Flow>

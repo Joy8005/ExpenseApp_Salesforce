@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>3</activeVersionNumber>
+    <description>This flow allows users to add Expense Item or Expense regarding an Item.</description>
+    <masterLabel>Flow For Expenses</masterLabel>
+</FlowDefinition>

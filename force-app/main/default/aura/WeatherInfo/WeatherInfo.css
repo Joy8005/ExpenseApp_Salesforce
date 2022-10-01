@@ -1,0 +1,11 @@
+.THIS.slds-card {
+	background-color: #000000;
+    border-color: #000000;
+    color: white;
+}
+
+.THIS .weatherInfoTable {
+    background-color: black;
+    border-color: black;
+    color: white;
+}
