@@ -1,4 +1,4 @@
-<aura:component implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global" controller="ExpensesOverview">
+<aura:component implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global" controller="ExpApp_ExpensesOverview">
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
     
     <aura:attribute name="expenseOverview" type="List" />

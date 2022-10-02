@@ -1,4 +1,4 @@
-<aura:component implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" controller="OpenWeatherMapAPI" access="global">
+<aura:component implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" controller="ExpApp_OpenWeatherMapAPI" access="global">
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
     
     <aura:attribute name="weatherGreeting" type="String" />

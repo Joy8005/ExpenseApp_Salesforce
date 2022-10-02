@@ -27,7 +27,7 @@
         var createExpenseItem = $A.get("e.force:createRecord");
         // Parameters like apiName and defaultValues are set
         createExpenseItem.setParams({
-            "entityApiName": "Expense_Item__c"
+            "entityApiName": "ExpApp_Expense_Item__c"
         });
         // Event fired and new contact dialog open
         createExpenseItem.fire();

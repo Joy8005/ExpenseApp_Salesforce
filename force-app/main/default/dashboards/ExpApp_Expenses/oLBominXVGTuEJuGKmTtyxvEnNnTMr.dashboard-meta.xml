@@ -35,7 +35,7 @@
                 </groupingSortProperties>
                 <header>Total Expenses Overview</header>
                 <legendPosition>Right</legendPosition>
-                <report>ExpenseOverview/Total_Expenses_Overview_OEo</report>
+                <report>ExpApp_ExpenseOverview/ExpApp_Total_Expenses_Overview_OEo</report>
                 <showPercentage>false</showPercentage>
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
