@@ -7,7 +7,7 @@
         <locationX>526</locationX>
         <locationY>280</locationY>
         <assignmentItems>
-            <assignToReference>CurrentSpendControlVariable.Spend_Control__c</assignToReference>
+            <assignToReference>CurrentSpendControlVariable.ExpApp_Spend_Control__c</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>Enter_new_spend_control_limit</elementReference>
@@ -52,7 +52,7 @@
         <object>ExpApp_Expense_Spend_Control__c</object>
         <outputReference>CurrentSpendControlVariable</outputReference>
         <queriedFields>Id</queriedFields>
-        <queriedFields>Spend_Control__c</queriedFields>
+        <queriedFields>ExpApp_Spend_Control__c</queriedFields>
     </recordLookups>
     <recordUpdates>
         <name>Update_Spend_Control</name>
@@ -79,7 +79,7 @@
             <name>Enter_new_spend_control_limit</name>
             <dataType>Currency</dataType>
             <defaultValue>
-                <elementReference>CurrentSpendControlVariable.Spend_Control__c</elementReference>
+                <elementReference>CurrentSpendControlVariable.ExpApp_Spend_Control__c</elementReference>
             </defaultValue>
             <fieldText>Enter new spend control limit</fieldText>
             <fieldType>InputField</fieldType>
