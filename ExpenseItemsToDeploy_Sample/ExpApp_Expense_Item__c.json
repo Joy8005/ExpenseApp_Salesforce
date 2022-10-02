@@ -1,0 +1,130 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "ExpApp_Expense_Item__c",
+                "referenceId": "ExpApp_Expense_Item__cRef1"
+            },
+            "Name": "In-House Food"
+        },
+        {
+            "attributes": {
+                "type": "ExpApp_Expense_Item__c",
+                "referenceId": "ExpApp_Expense_Item__cRef2"
+            },
+            "Name": "Haircut"
+        },
+        {
+            "attributes": {
+                "type": "ExpApp_Expense_Item__c",
+                "referenceId": "ExpApp_Expense_Item__cRef3"
+            },
+            "Name": "Laundry"
+        },
+        {
+            "attributes": {
+                "type": "ExpApp_Expense_Item__c",
+                "referenceId": "ExpApp_Expense_Item__cRef4"
+            },
+            "Name": "Party"
+        },
+        {
+            "attributes": {
+                "type": "ExpApp_Expense_Item__c",
+                "referenceId": "ExpApp_Expense_Item__cRef5"
+            },
+            "Name": "Electricity Bill"
+        },
+        {
+            "attributes": {
+                "type": "ExpApp_Expense_Item__c",
+                "referenceId": "ExpApp_Expense_Item__cRef6"
+            },
+            "Name": "House Rent"
+        },
+        {
+            "attributes": {
+                "type": "ExpApp_Expense_Item__c",
+                "referenceId": "ExpApp_Expense_Item__cRef7"
+            },
+            "Name": "Medical"
+        },
+        {
+            "attributes": {
+                "type": "ExpApp_Expense_Item__c",
+                "referenceId": "ExpApp_Expense_Item__cRef8"
+            },
+            "Name": "Skin Care"
+        },
+        {
+            "attributes": {
+                "type": "ExpApp_Expense_Item__c",
+                "referenceId": "ExpApp_Expense_Item__cRef9"
+            },
+            "Name": "Clothes"
+        },
+        {
+            "attributes": {
+                "type": "ExpApp_Expense_Item__c",
+                "referenceId": "ExpApp_Expense_Item__cRef10"
+            },
+            "Name": "India"
+        },
+        {
+            "attributes": {
+                "type": "ExpApp_Expense_Item__c",
+                "referenceId": "ExpApp_Expense_Item__cRef11"
+            },
+            "Name": "Stationary"
+        },
+        {
+            "attributes": {
+                "type": "ExpApp_Expense_Item__c",
+                "referenceId": "ExpApp_Expense_Item__cRef12"
+            },
+            "Name": "Snapper"
+        },
+        {
+            "attributes": {
+                "type": "ExpApp_Expense_Item__c",
+                "referenceId": "ExpApp_Expense_Item__cRef13"
+            },
+            "Name": "Food"
+        },
+        {
+            "attributes": {
+                "type": "ExpApp_Expense_Item__c",
+                "referenceId": "ExpApp_Expense_Item__cRef14"
+            },
+            "Name": "University"
+        },
+        {
+            "attributes": {
+                "type": "ExpApp_Expense_Item__c",
+                "referenceId": "ExpApp_Expense_Item__cRef15"
+            },
+            "Name": "Fun"
+        },
+        {
+            "attributes": {
+                "type": "ExpApp_Expense_Item__c",
+                "referenceId": "ExpApp_Expense_Item__cRef16"
+            },
+            "Name": "Eye"
+        },
+        {
+            "attributes": {
+                "type": "ExpApp_Expense_Item__c",
+                "referenceId": "ExpApp_Expense_Item__cRef17"
+            },
+            "Name": "Broadband"
+        },
+        {
+            "attributes": {
+                "type": "ExpApp_Expense_Item__c",
+                "referenceId": "ExpApp_Expense_Item__cRef18"
+            },
+            "Name": "Spotify"
+        }
+    ]
+}
