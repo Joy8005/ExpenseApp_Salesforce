@@ -1,6 +1,6 @@
 <aura:component implements="flexipage:availableForAllPageTypes" 
                 access="global" 
-                controller="LightningDataTableExpensesDemoController">
+                controller="ExpApp_LightningDataTableExpensesDemoController">
     <aura:attribute name="data" type="Object"/>
     <aura:attribute name="columns" type="Object[]"/>
     <aura:attribute name="sortedBy" type="String" default="expenseDate" />

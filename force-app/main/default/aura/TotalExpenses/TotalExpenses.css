@@ -1,0 +1,15 @@
+h1.THIS {
+  font-size: 80px;
+}
+
+div.THIS{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.THIS.slds-card{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
