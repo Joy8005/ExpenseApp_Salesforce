@@ -7,7 +7,7 @@
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Expense_Item__c.Total_Expense__c</column>
+            <column>ExpApp_Expense_Item__c.ExpApp_Total_Expense__c</column>
         </chartSummaries>
         <chartType>Donut</chartType>
         <enableHoverLabels>false</enableHoverLabels>
@@ -28,7 +28,7 @@
     </chart>
     <colorRanges>
         <aggregate>Sum</aggregate>
-        <columnName>Expense_Item__c.Total_Expense__c</columnName>
+        <columnName>ExpApp_Expense_Item__c.ExpApp_Total_Expense__c</columnName>
         <highBreakpoint>100.0</highBreakpoint>
         <highColor>#006714</highColor>
         <lowBreakpoint>50.0</lowBreakpoint>
@@ -37,11 +37,11 @@
     </colorRanges>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>Expense_Item__c.Total_Expense__c</field>
+        <field>ExpApp_Expense_Item__c.ExpApp_Total_Expense__c</field>
     </columns>
     <filter>
         <criteriaItems>
-            <column>Expense_Item__c.Total_Expense__c</column>
+            <column>ExpApp_Expense_Item__c.ExpApp_Total_Expense__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterThan</operator>
@@ -51,7 +51,7 @@
     <format>Summary</format>
     <formattingRules>
         <aggregate>Sum</aggregate>
-        <columnName>Expense_Item__c.Total_Expense__c</columnName>
+        <columnName>ExpApp_Expense_Item__c.ExpApp_Total_Expense__c</columnName>
         <values>
             <backgroundColor>#B50E03</backgroundColor>
             <rangeUpperBound>50.0</rangeUpperBound>
