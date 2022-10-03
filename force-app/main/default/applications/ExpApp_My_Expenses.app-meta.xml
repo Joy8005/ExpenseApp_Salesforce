@@ -18,12 +18,6 @@
         <type>Flexipage</type>
         <pageOrSobjectType>ExpApp_Expense_Item__c</pageOrSobjectType>
     </actionOverrides>
-    <brand>
-        <headerColor>#084F8E</headerColor>
-        <logo>cashcointcostcurrencymoneypriceicon</logo>
-        <logoVersion>1</logoVersion>
-        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
-    </brand>
     <description>Tracks all the info of my expenses.</description>
     <formFactors>Small</formFactors>
     <formFactors>Large</formFactors>
@@ -39,5 +33,4 @@
     <tabs>standard-Dashboard</tabs>
     <tabs>ExpApp_Expense_Spend_Control__c</tabs>
     <uiType>Lightning</uiType>
-    <utilityBar>My_Expenses_UtilityBar</utilityBar>
 </CustomApplication>

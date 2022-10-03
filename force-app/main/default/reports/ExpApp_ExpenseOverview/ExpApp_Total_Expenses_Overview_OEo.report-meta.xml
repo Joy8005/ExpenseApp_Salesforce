@@ -74,7 +74,7 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>CustomEntityCustomEntity$Expense_Item__c$ExpApp_Expense__c</reportType>
+    <reportType>CustomEntityCustomEntity$ExpApp_Expense_Item__c$ExpApp_Expense__c</reportType>
     <scope>user</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>

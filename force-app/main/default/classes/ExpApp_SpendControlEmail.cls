@@ -2,7 +2,7 @@ global class ExpApp_SpendControlEmail implements Queueable {
     
    	private List<ExpApp_Expense__c> thisExpenses;
     //class constructor to initiate list into 'thisExpenses'
-    public SpendControlEmail(List<ExpApp_Expense__c> allexpenses) {
+    public ExpApp_SpendControlEmail(List<ExpApp_Expense__c> allexpenses) {
         this.thisExpenses = allexpenses;
     }
     public void execute(QueueableContext context){

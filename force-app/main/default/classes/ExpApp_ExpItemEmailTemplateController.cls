@@ -1,4 +1,4 @@
-public class ExpApp_ExpenseItemEmailTemplateController
+public class ExpApp_ExpItemEmailTemplateController
 {
     public Decimal spendControl = 0.00;
     public Decimal fullExpense = 0.00;
@@ -8,7 +8,7 @@ Note that any query that includes an aggregate function returns its results in a
 Aggregate functions become a more powerful tool to generate reports when you use them with a GROUP BY clause. For example, you could find the count of all opportunities for a CloseDate.
 
 */
-    public ExpApp_ExpenseItemEmailTemplateController()
+    public ExpApp_ExpItemEmailTemplateController()
     {
         lstAR = [select Name, sum(ExpApp_Total_Expense__c) totalExpense 
                                                from ExpApp_Expense_Item__c  

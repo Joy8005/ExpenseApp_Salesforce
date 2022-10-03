@@ -3,7 +3,7 @@
     <fullName>ExpApp_Expense_Item__c</fullName>
     <externalId>false</externalId>
     <label>Expense Item</label>
-    <referenceTo>Expense_Item__c</referenceTo>
+    <referenceTo>ExpApp_Expense_Item__c</referenceTo>
     <relationshipLabel>Expenses</relationshipLabel>
     <relationshipName>Expenses</relationshipName>
     <relationshipOrder>0</relationshipOrder>
