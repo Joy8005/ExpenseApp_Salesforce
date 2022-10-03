@@ -7,14 +7,14 @@
         <locationX>575</locationX>
         <locationY>303</locationY>
         <assignmentItems>
-            <assignToReference>ExpApp_Expense.ExpApp_Expense_Date__c</assignToReference>
+            <assignToReference>Expense.ExpApp_Expense_Date__c</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>Expense_Date</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
-            <assignToReference>ExpApp_Expense.ExpApp_Expense_Amount__c</assignToReference>
+            <assignToReference>Expense.ExpApp_Expense_Amount__c</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>Expense_Amount</elementReference>
@@ -108,7 +108,7 @@
         <displayField>Name</displayField>
         <object>ExpApp_Expense_Item__c</object>
         <outputAssignments>
-            <assignToReference>ExpApp_Expense.ExpApp_Expense_Item__c</assignToReference>
+            <assignToReference>Expense.ExpApp_Expense_Item__c</assignToReference>
             <field>Id</field>
         </outputAssignments>
     </dynamicChoiceSets>

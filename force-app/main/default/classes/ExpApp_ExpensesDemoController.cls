@@ -1,4 +1,4 @@
-public class ExpApp_LightningDataTableExpensesDemoController {
+public class ExpApp_ExpensesDemoController {
     @AuraEnabled
     public static Expense[] getDetailedExpenses(){
         //creating Expense class list
@@ -51,8 +51,8 @@ public class ExpApp_LightningDataTableExpensesDemoController {
     
     @AuraEnabled
     public static void saveChanges(String changedValuesJson){
-        Expense[] changedValues = (ExpApp_LightningDataTableExpensesDemoController.Expense[]) JSON.deserialize(
-            changedValuesJson, ExpApp_LightningDataTableExpensesDemoController.Expense[].class);
+        Expense[] changedValues = (ExpApp_ExpensesDemoController.Expense[]) JSON.deserialize(
+            changedValuesJson, ExpApp_ExpensesDemoController.Expense[].class);
         
         ExpApp_Expense__c[] recs = toReviewRecs(changedValues);
         update recs;

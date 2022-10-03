@@ -2,7 +2,7 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
   <types>
     <members>ExpApp_ExpenseController</members>
-    <members>ExpApp_ExpenseItemEmailTemplateController</members>
+    <members>ExpApp_ExpItemEmailTemplateController</members>
     <members>ExpApp_ExpensesOverview</members>
     <members>ExpApp_GetWeatherData</members>
     <members>ExpApp_IBMWeather_Controller</members>

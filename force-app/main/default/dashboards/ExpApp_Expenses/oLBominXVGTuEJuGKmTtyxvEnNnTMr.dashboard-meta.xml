@@ -50,7 +50,6 @@
     </dashboardGridLayout>
     <dashboardType>SpecifiedUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>mayur.odedra@2degrees.com</runningUser>
     <textColor>#000000</textColor>
     <title>Expense Overview</title>
     <titleColor>#000000</titleColor>
