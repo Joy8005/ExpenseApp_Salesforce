@@ -3,20 +3,20 @@
     <actionOverrides>
         <actionName>View</actionName>
         <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>ExpApp_Expense_Item_Record_Page2</content>
+        <content>Expense_Item_Record_Page2</content>
         <formFactor>Small</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
-        <pageOrSobjectType>ExpApp_Expense_Item__c</pageOrSobjectType>
+        <pageOrSobjectType>Expense_Item__c</pageOrSobjectType>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
         <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>ExpApp_Expense_Item_Record_Page2</content>
+        <content>Expense_Item_Record_Page2</content>
         <formFactor>Large</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
-        <pageOrSobjectType>ExpApp_Expense_Item__c</pageOrSobjectType>
+        <pageOrSobjectType>Expense_Item__c</pageOrSobjectType>
     </actionOverrides>
     <description>Tracks all the info of my expenses.</description>
     <formFactors>Small</formFactors>
@@ -26,11 +26,11 @@
     <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>My Expenses</label>
     <navType>Standard</navType>
-    <tabs>ExpApp_Expense_Page</tabs>
-    <tabs>ExpApp_Expense_Item__c</tabs>
-    <tabs>ExpApp_Expense__c</tabs>
+    <tabs>Expense_Page</tabs>
+    <tabs>Expense_Item__c</tabs>
+    <tabs>Expense__c</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
-    <tabs>ExpApp_Expense_Spend_Control__c</tabs>
+    <tabs>Expense_Spend_Control__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

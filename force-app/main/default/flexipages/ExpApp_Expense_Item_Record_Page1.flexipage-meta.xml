@@ -3,8 +3,8 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>ExpApp_TotalExpenses</componentName>
-                <identifier>ExpApp_TotalExpenses</identifier>
+                <componentName>TotalExpenses</componentName>
+                <identifier>TotalExpenses</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
@@ -13,7 +13,7 @@
     </flexiPageRegions>
     <masterLabel>Expense Item Record Page</masterLabel>
     <parentFlexiPage>flexipage__default_rec_L</parentFlexiPage>
-    <sobjectType>ExpApp_Expense_Item__c</sobjectType>
+    <sobjectType>Expense_Item__c</sobjectType>
     <template>
         <name>flexipage:recordHomeTemplateDesktop</name>
     </template>

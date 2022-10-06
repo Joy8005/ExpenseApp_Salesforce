@@ -5,7 +5,7 @@
     <messaging:htmlEmailBody >
         <p>Hello {!recipient.name},</p>
         <p>This email is to remind you that you are going over your spend control limit.</p>
-        <c:ExpApp_ExpenseItemEmailTemplate />
+        <c:ExpenseItemEmailTemplate />
         
         <p>Thank you!</p>
     </messaging:htmlEmailBody>

@@ -1,13 +1,13 @@
-public class ExpApp_ExpensesDemoController {
+public class ExpensesDemoController {
     @AuraEnabled
     public static Expense[] getDetailedExpenses(){
         //creating Expense class list
         Expense[] allExpenses = new Expense[]{};
             //getting each record from the query
-            for(ExpApp_Expense__c myExpense : [select Id, ExpApp_Expense_Item__r.Name, ExpApp_Expense_Amount__c, ExpApp_Expense_Date__c
-                                        from ExpApp_Expense__c
-                                        where ExpApp_Expense_Amount__c > 0.00
-                                        order by ExpApp_Expense_Date__c DESC]){
+            for(Expense__c myExpense : [select Id, Expense_Item__r.Name, Expense_Amount__c, Expense_Date__c
+                                        from Expense__c
+                                        where Expense_Amount__c > 0.00
+                                        order by Expense_Date__c DESC]){
                                             //storing the record in to a list and processing it using class
                                             allExpenses.add(new Expense(myExpense));
                                         }
@@ -22,18 +22,18 @@ public class ExpApp_ExpensesDemoController {
         @AuraEnabled public Date expenseDate {get;set;}
         
         //class constructor
-        public Expense(ExpApp_Expense__c myExpense){
+        public Expense(Expense__c myExpense){
             this.Id = myExpense.Id;
-            this.expenseName = myExpense.ExpApp_Expense_Item__r.Name;
-            this.expenseAmount = myExpense.ExpApp_Expense_Amount__c;
-            this.expenseDate = myExpense.ExpApp_Expense_Date__c;
+            this.expenseName = myExpense.Expense_Item__r.Name;
+            this.expenseAmount = myExpense.Expense_Amount__c;
+            this.expenseDate = myExpense.Expense_Date__c;
         }
     }
     
     @AuraEnabled
     public static Map<String, String> deleteExpense(Id expenseId){
-        ExpApp_Expense__c expenseToDelete = [select Id 
-                                      from ExpApp_Expense__c
+        Expense__c expenseToDelete = [select Id 
+                                      from Expense__c
                                       where Id =: expenseId];
         Map<String, String> resultMap = new Map<String, String>();
         
@@ -51,16 +51,16 @@ public class ExpApp_ExpensesDemoController {
     
     @AuraEnabled
     public static void saveChanges(String changedValuesJson){
-        Expense[] changedValues = (ExpApp_ExpensesDemoController.Expense[]) JSON.deserialize(
-            changedValuesJson, ExpApp_ExpensesDemoController.Expense[].class);
+        Expense[] changedValues = (ExpensesDemoController.Expense[]) JSON.deserialize(
+            changedValuesJson, ExpensesDemoController.Expense[].class);
         
-        ExpApp_Expense__c[] recs = toReviewRecs(changedValues);
+        Expense__c[] recs = toReviewRecs(changedValues);
         update recs;
     }
     
     
-    private static ExpApp_Expense__c[] toReviewRecs(Expense[] expenses){
-        ExpApp_Expense__c[] recs = new ExpApp_Expense__c[]{};
+    private static Expense__c[] toReviewRecs(Expense[] expenses){
+        Expense__c[] recs = new Expense__c[]{};
             for(Expense expense : expenses){
                 recs.add(toReviewRec(expense));
             }
@@ -68,12 +68,12 @@ public class ExpApp_ExpensesDemoController {
     }
     
     
-    private static ExpApp_Expense__c toReviewRec(Expense expense){
-        ExpApp_Expense__c rec = new ExpApp_Expense__c(Id = expense.Id);
+    private static Expense__c toReviewRec(Expense expense){
+        Expense__c rec = new Expense__c(Id = expense.Id);
         if(expense.expenseAmount != null && expense.expenseAmount > 0.00){
-            rec.ExpApp_Expense_Amount__c = expense.expenseAmount;
+            rec.Expense_Amount__c = expense.expenseAmount;
         }if(expense.expenseDate != null){
-            rec.ExpApp_Expense_Date__c = expense.expenseDate;	
+            rec.Expense_Date__c = expense.expenseDate;	
         }
         return rec;
     }

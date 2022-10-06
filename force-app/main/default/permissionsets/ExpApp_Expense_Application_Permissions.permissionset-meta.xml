@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <applicationVisibilities>
-        <application>ExpApp_My_Expenses</application>
+        <application>My_Expenses</application>
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
-        <apexClass>ExpApp_ExpItemEmailTemplateController</apexClass>
+        <apexClass>ExpItemEmailTemplateController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>ExpApp_ExpenseController</apexClass>
+        <apexClass>ExpenseController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>ExpApp_ExpensesDemoController</apexClass>
+        <apexClass>ExpensesDemoController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>ExpApp_ExpensesOverview</apexClass>
+        <apexClass>ExpensesOverview</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>ExpApp_GetDetailedExpensesClass</apexClass>
+        <apexClass>GetDetailedExpensesClass</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>ExpApp_OpenWeatherMapAPI</apexClass>
+        <apexClass>OpenWeatherMapAPI</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>ExpApp_SpendControlEmail</apexClass>
+        <apexClass>SpendControlEmail</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <description>This is the permission set for the expense application.</description>
     <fieldPermissions>
         <editable>false</editable>
-        <field>ExpApp_Expense_Item__c.ExpApp_Total_Expense__c</field>
+        <field>Expense_Item__c.Total_Expense__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
@@ -46,7 +46,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
-        <object>ExpApp_Expense_Item__c</object>
+        <object>Expense_Item__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -55,7 +55,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
-        <object>ExpApp_Expense_Spend_Control__c</object>
+        <object>Expense_Spend_Control__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -64,23 +64,23 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
-        <object>ExpApp_Expense__c</object>
+        <object>Expense__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <tabSettings>
-        <tab>ExpApp_Expense_Item__c</tab>
+        <tab>Expense_Item__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
-        <tab>ExpApp_Expense_Page</tab>
+        <tab>Expense_Page</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
-        <tab>ExpApp_Expense_Spend_Control__c</tab>
+        <tab>Expense_Spend_Control__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
-        <tab>ExpApp_Expense__c</tab>
+        <tab>Expense__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <userPermissions>

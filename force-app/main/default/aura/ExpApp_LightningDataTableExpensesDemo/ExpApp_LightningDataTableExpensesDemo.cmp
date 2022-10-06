@@ -1,6 +1,6 @@
 <aura:component implements="flexipage:availableForAllPageTypes" 
                 access="global" 
-                controller="ExpApp_ExpensesDemoController">
+                controller="ExpensesDemoController">
     <aura:attribute name="data" type="Object"/>
     <aura:attribute name="columns" type="Object[]"/>
     <aura:attribute name="sortedBy" type="String" default="expenseDate" />

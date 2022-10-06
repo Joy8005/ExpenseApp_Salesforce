@@ -1,4 +1,4 @@
-<apex:component access="global" controller="ExpApp_ExpItemEmailTemplateController">
+<apex:component access="global" controller="ExpItemEmailTemplateController">
 
     <apex:dataTable bgcolor="white" border="1" value="{!Results}" var="expense" id="theExpense"
         rowClasses="odd,even" styleClass="tableClass">

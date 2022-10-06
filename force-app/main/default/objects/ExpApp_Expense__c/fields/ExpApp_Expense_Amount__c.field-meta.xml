@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>ExpApp_Expense_Amount__c</fullName>
+    <fullName>Expense_Amount__c</fullName>
     <description>Describe the amount that was spent for the item.</description>
     <externalId>false</externalId>
     <inlineHelpText>Enter the amount that you spent on the item.</inlineHelpText>

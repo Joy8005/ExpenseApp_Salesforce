@@ -1,4 +1,4 @@
-public class ExpApp_OpenWeatherMapAPI {
+public class OpenWeatherMapAPI {
     @AuraEnabled
     public static List<String> getWeatherData(){
         

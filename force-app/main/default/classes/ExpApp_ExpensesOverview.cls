@@ -1,4 +1,4 @@
-public class ExpApp_ExpensesOverview {
+public class ExpensesOverview {
     @AuraEnabled
     public static List<Decimal> getMonthExpenses(){
         Date myDate = Date.today();
@@ -6,19 +6,19 @@ public class ExpApp_ExpensesOverview {
         
         List<Decimal> expensesOverview = new List<Decimal>();
         
-        AggregateResult weekExpense = [select sum(ExpApp_Expense_Amount__c) weekExpense
-                                       from ExpApp_Expense__c
-                                       where ExpApp_Expense_Date__c = THIS_WEEK];
+        AggregateResult weekExpense = [select sum(Expense_Amount__c) weekExpense
+                                       from Expense__c
+                                       where Expense_Date__c = THIS_WEEK];
         expensesOverview.add((Decimal)weekExpense.get('weekExpense'));
         
-        AggregateResult monthExpense = [select sum(ExpApp_Expense_Amount__c) monthExpense
-                                        from ExpApp_Expense__c
-                                        where ExpApp_Expense_Date__c = THIS_MONTH];
+        AggregateResult monthExpense = [select sum(Expense_Amount__c) monthExpense
+                                        from Expense__c
+                                        where Expense_Date__c = THIS_MONTH];
         expensesOverview.add((Decimal)monthExpense.get('monthExpense'));
         
-        AggregateResult yearExpense = [select sum(ExpApp_Expense_Amount__c) yearExpense
-                                       from ExpApp_Expense__c
-                                       where ExpApp_Expense_Date__c = THIS_YEAR];
+        AggregateResult yearExpense = [select sum(Expense_Amount__c) yearExpense
+                                       from Expense__c
+                                       where Expense_Date__c = THIS_YEAR];
         expensesOverview.add((Decimal)yearExpense.get('yearExpense'));
         
         for(Integer i=0; i<expensesOverview.size(); i++){

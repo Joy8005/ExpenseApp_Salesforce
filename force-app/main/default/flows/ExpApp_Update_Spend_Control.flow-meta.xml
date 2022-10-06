@@ -7,7 +7,7 @@
         <locationX>526</locationX>
         <locationY>280</locationY>
         <assignmentItems>
-            <assignToReference>CurrentSpendControlVariable.ExpApp_Spend_Control__c</assignToReference>
+            <assignToReference>CurrentSpendControlVariable.Spend_Control__c</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>Enter_new_spend_control_limit</elementReference>
@@ -49,10 +49,10 @@
                 <stringValue>SC-0001</stringValue>
             </value>
         </filters>
-        <object>ExpApp_Expense_Spend_Control__c</object>
+        <object>Expense_Spend_Control__c</object>
         <outputReference>CurrentSpendControlVariable</outputReference>
         <queriedFields>Id</queriedFields>
-        <queriedFields>ExpApp_Spend_Control__c</queriedFields>
+        <queriedFields>Spend_Control__c</queriedFields>
     </recordLookups>
     <recordUpdates>
         <name>Update_Spend_Control</name>
@@ -79,7 +79,7 @@
             <name>Enter_new_spend_control_limit</name>
             <dataType>Currency</dataType>
             <defaultValue>
-                <elementReference>CurrentSpendControlVariable.ExpApp_Spend_Control__c</elementReference>
+                <elementReference>CurrentSpendControlVariable.Spend_Control__c</elementReference>
             </defaultValue>
             <fieldText>Enter new spend control limit</fieldText>
             <fieldType>InputField</fieldType>
@@ -102,7 +102,7 @@
         </connector>
         <fields>
             <name>Current_Spend_Control_Display_Text</name>
-            <fieldText>&lt;p&gt;Your current spend control limit is: {!CurrentSpendControlVariable.ExpApp_Spend_Control__c}&lt;/p&gt;&lt;p&gt;Click &lt;b&gt;Next &lt;/b&gt;to change it.&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;Your current spend control limit is: {!CurrentSpendControlVariable.Spend_Control__c}&lt;/p&gt;&lt;p&gt;Click &lt;b&gt;Next &lt;/b&gt;to change it.&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <showFooter>true</showFooter>
@@ -140,7 +140,7 @@
         <isCollection>false</isCollection>
         <isInput>false</isInput>
         <isOutput>false</isOutput>
-        <objectType>ExpApp_Expense_Spend_Control__c</objectType>
+        <objectType>Expense_Spend_Control__c</objectType>
     </variables>
     <variables>
         <name>Spend_Control_Data</name>
@@ -148,6 +148,6 @@
         <isCollection>false</isCollection>
         <isInput>false</isInput>
         <isOutput>false</isOutput>
-        <objectType>ExpApp_Expense_Spend_Control__c</objectType>
+        <objectType>Expense_Spend_Control__c</objectType>
     </variables>
 </Flow>

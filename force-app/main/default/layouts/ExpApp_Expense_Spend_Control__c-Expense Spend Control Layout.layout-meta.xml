@@ -12,7 +12,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>ExpApp_Spend_Control__c</field>
+                <field>Spend_Control__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

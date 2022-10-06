@@ -7,14 +7,14 @@
         <locationX>575</locationX>
         <locationY>303</locationY>
         <assignmentItems>
-            <assignToReference>Expense.ExpApp_Expense_Date__c</assignToReference>
+            <assignToReference>Expense.Expense_Date__c</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>Expense_Date</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
-            <assignToReference>Expense.ExpApp_Expense_Amount__c</assignToReference>
+            <assignToReference>Expense.Expense_Amount__c</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>Expense_Amount</elementReference>
@@ -106,9 +106,9 @@
         <name>Item</name>
         <dataType>String</dataType>
         <displayField>Name</displayField>
-        <object>ExpApp_Expense_Item__c</object>
+        <object>Expense_Item__c</object>
         <outputAssignments>
-            <assignToReference>Expense.ExpApp_Expense_Item__c</assignToReference>
+            <assignToReference>Expense.Expense_Item__c</assignToReference>
             <field>Id</field>
         </outputAssignments>
     </dynamicChoiceSets>
@@ -271,7 +271,7 @@
         <isCollection>false</isCollection>
         <isInput>false</isInput>
         <isOutput>false</isOutput>
-        <objectType>ExpApp_Expense__c</objectType>
+        <objectType>Expense__c</objectType>
     </variables>
     <variables>
         <name>ExpenseItem</name>
@@ -279,6 +279,6 @@
         <isCollection>false</isCollection>
         <isInput>false</isInput>
         <isOutput>false</isOutput>
-        <objectType>ExpApp_Expense_Item__c</objectType>
+        <objectType>Expense_Item__c</objectType>
     </variables>
 </Flow>

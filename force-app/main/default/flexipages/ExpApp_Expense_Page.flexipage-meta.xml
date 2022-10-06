@@ -3,14 +3,14 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>ExpApp_TotalExpenses</componentName>
-                <identifier>ExpApp_TotalExpenses</identifier>
+                <componentName>TotalExpenses</componentName>
+                <identifier>TotalExpenses</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
             <componentInstance>
-                <componentName>ExpApp_WeatherInfo</componentName>
-                <identifier>ExpApp_WeatherInfo</identifier>
+                <componentName>WeatherInfo</componentName>
+                <identifier>WeatherInfo</identifier>
             </componentInstance>
         </itemInstances>
         <name>region1</name>
@@ -19,8 +19,8 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>ExpApp_ExpesnesOverview</componentName>
-                <identifier>ExpApp_ExpesnesOverview</identifier>
+                <componentName>ExpesnesOverview</componentName>
+                <identifier>ExpesnesOverview</identifier>
             </componentInstance>
         </itemInstances>
         <name>region2</name>
@@ -35,7 +35,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>reportName</name>
-                    <value>ExpApp_Total_Expenses_Overview_OEo</value>
+                    <value>Total_Expenses_Overview_OEo</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>showRefreshButton</name>
@@ -51,8 +51,8 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>expApp_lwcCalculator</componentName>
-                <identifier>expApp_lwcCalculator</identifier>
+                <componentName>lwcCalculator</componentName>
+                <identifier>lwcCalculator</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -63,7 +63,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>flowName</name>
-                    <value>ExpApp_Update_Spend_Control</value>
+                    <value>Update_Spend_Control</value>
                 </componentInstanceProperties>
                 <componentName>flowruntime:interview</componentName>
                 <identifier>flowruntime_interview</identifier>
