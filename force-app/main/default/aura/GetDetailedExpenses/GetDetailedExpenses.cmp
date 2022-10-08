@@ -1,0 +1,78 @@
+<aura:component implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global" controller="GetDetailedExpensesClass">
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <aura:attribute name="recordError" type="String" access="private"/>
+    <aura:attribute name="expensesList" type="List" />
+    
+    <article class="slds-card">
+        <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__figure">
+                    <span class="slds-icon_container slds-icon-standard-partner_fund_request" title="Expense Table">
+                        <lightning:icon iconName="standard:partner_fund_request" size="large" alternativeText="Indicates approval"/>
+                        <span class="slds-assistive-text">contact</span>
+                    </span>
+                </div>
+                <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        <b>
+                            <span>Expense Table</span>
+                        </b>
+                    </h2>
+                </div>
+                <div class="slds-no-flex">
+                    <lightning:buttonIcon iconName="utility:color_swatch"  size="large" alternativeText="Add Item" onclick="{!c.newExpenseItem}"/>
+                    <lightning:buttonIcon iconName="utility:currency"  size="large" alternativeText="Add Expense" onclick="{!c.newExpense}"/>
+                </div>
+            </header>
+        </div>
+        <div class="slds-card__body">
+            <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-table_fixed-layout" role="grid">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Item">Item</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Date">Date</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Amount">Amount</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Actions">Actions</div>
+                        </th>
+                    </tr>
+                </thead>
+                <aura:iteration items="{!v.expensesList}" var="expense">
+                    <tbody>
+                        <tr class="slds-hint-parent">
+                            <th scope="row">
+                                <div class="slds-truncate" title="{!expense.expenseName}">
+                                    <a href="javascript:void(0);" tabindex="-1">{!expense.expenseName}</a>
+                                </div>
+                            </th>
+                            <td role="gridcell">
+                                <div class="slds-truncate">
+                                    <lightning:formattedDateTime value="{!expense.expenseDate}"/>
+                                </div>
+                            </td>
+                            <td role="gridcell">
+                                <div class="slds-truncate" >
+                                    <lightning:formattedNumber value="{!expense.expenseAmount}" style="currency" currencyCode="NZD" />
+                                </div>
+                            </td>
+                            <td role="gridcell">
+                                <div class="slds-truncate" >
+                                    <lightning:buttonIcon name="{!expense.Id}" iconName="utility:edit" size="medium" variant="bare" alternativeText="Edit"  onclick="{!c.editExpenses}"/>
+                                    <lightning:buttonIcon name="{!expense.Id}" iconName="utility:delete" size="medium" variant="bare" alternativeText="Delete"  onclick="{!c.deleteExpenses}"/>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </aura:iteration>
+            </table>
+        </div>
+    </article>
+</aura:component>

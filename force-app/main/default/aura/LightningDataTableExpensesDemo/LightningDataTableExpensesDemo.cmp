@@ -1,0 +1,38 @@
+<aura:component implements="flexipage:availableForAllPageTypes" 
+                access="global" 
+                controller="ExpensesDemoController">
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="columns" type="Object[]"/>
+    <aura:attribute name="sortedBy" type="String" default="expenseDate" />
+    <aura:attribute name="sortedDirection" type="String" default="desc" />
+    <aura:attribute name="selectedRows" type="Object[]"/>
+    <aura:attribute name="draftValues" type="Object" default="[]"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+  
+    <lightning:card iconName="standard:partner_fund_request" title="Your Expenses" class="reviews-table">
+        
+        <aura:set attribute="actions">
+            <lightning:buttonIcon iconName="utility:color_swatch"  size="large" alternativeText="Add Item" onclick="{!c.newExpenseItem}"/>
+                    <lightning:buttonIcon iconName="utility:currency"  size="large" alternativeText="Add Expense" onclick="{!c.newExpense}"/>
+        </aura:set>
+        
+    	<lightning:dataTable columns="{!v.columns}"
+                         data="{!v.data}"
+                         keyField="Id"
+                         hideCheckboxColumn="true"
+                         showRowNumberColumn="false"
+                         onsort="{!c.handleSort}"
+                         sortedBy="{!v.sortedBy}"
+                         sortedDirection="{!v.sortedDirection}"
+                         onrowaction="{!c.handleRowAction}"
+                         onrowselection="{!c.handleRowSelection}"
+                         draftValues="{!v.draftValues}"
+                         onsave="{!c.handleSave}"
+                         class="reviews-table"/>
+    </lightning:card>
+    
+    
+    
+</aura:component>

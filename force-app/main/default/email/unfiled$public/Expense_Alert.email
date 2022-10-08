@@ -1,0 +1,12 @@
+<messaging:emailTemplate subject="Spend Control Alert" 
+                         recipientType="User"
+                         relatedToType="User">
+    
+    <messaging:htmlEmailBody >
+        <p>Hello {!recipient.name},</p>
+        <p>This email is to remind you that you are going over your spend control limit.</p>
+        <c:ExpenseItemEmailTemplate />
+        
+        <p>Thank you!</p>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>
