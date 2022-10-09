@@ -4,10 +4,10 @@ public class ExpensesDemoController {
         //creating Expense class list
         Expense[] allExpenses = new Expense[]{};
             //getting each record from the query
-            for(XpenseApp__Expense__c myExpense : [select Id, XpenseApp__Expense_Item__r.Name, XpenseApp__Expense_Amount__c, XpenseApp__Expense_Date__c
+            for(Expense__c myExpense : [select Id, Expense_Item__r.Name, Expense_Amount__c, Expense_Date__c
                                         from _c
-                                        where XpenseApp__Expense_Amount__c > 0.00
-                                        order by XpenseApp__Expense_Date__c DESC]){
+                                        where Expense_Amount__c > 0.00
+                                        order by Expense_Date__c DESC]){
                                             //storing the record in to a list and processing it using class
                                             allExpenses.add(new Expense(myExpense));
                                         }
@@ -22,18 +22,18 @@ public class ExpensesDemoController {
         @AuraEnabled public Date expenseDate {get;set;}
         
         //class constructor
-        public Expense(XpenseApp__Expense__c myExpense){
+        public Expense(Expense__c myExpense){
             this.Id = myExpense.Id;
-            this.expenseName = myExpense.XpenseApp__Expense_Item__r.Name;
-            this.expenseAmount = myExpense.XpenseApp__Expense_Amount__c;
-            this.expenseDate = myExpense.XpenseApp__Expense_Date__c;
+            this.expenseName = myExpense.Expense_Item__r.Name;
+            this.expenseAmount = myExpense.Expense_Amount__c;
+            this.expenseDate = myExpense.Expense_Date__c;
         }
     }
     
     @AuraEnabled
     public static Map<String, String> deleteExpense(Id expenseId){
-        XpenseApp__Expense__c expenseToDelete = [select Id 
-                                      from XpenseApp__Expense__c
+        Expense__c expenseToDelete = [select Id 
+                                      from Expense__c
                                       where Id =: expenseId];
         Map<String, String> resultMap = new Map<String, String>();
         
@@ -54,13 +54,13 @@ public class ExpensesDemoController {
         Expense[] changedValues = (ExpensesDemoController.Expense[]) JSON.deserialize(
             changedValuesJson, ExpensesDemoController.Expense[].class);
         
-        XpenseApp__Expense__c[] recs = toReviewRecs(changedValues);
+        Expense__c[] recs = toReviewRecs(changedValues);
         update recs;
     }
     
     
-    private static XpenseApp__Expense__c[] toReviewRecs(Expense[] expenses){
-        XpenseApp__Expense__c[] recs = new XpenseApp__Expense__c[]{};
+    private static Expense__c[] toReviewRecs(Expense[] expenses){
+        Expense__c[] recs = new Expense__c[]{};
             for(Expense expense : expenses){
                 recs.add(toReviewRec(expense));
             }
@@ -68,12 +68,12 @@ public class ExpensesDemoController {
     }
     
     
-    private static XpenseApp__Expense__c toReviewRec(Expense expense){
-        XpenseApp__Expense__c rec = new XpenseApp__Expense__c(Id = expense.Id);
+    private static Expense__c toReviewRec(Expense expense){
+        Expense__c rec = new Expense__c(Id = expense.Id);
         if(expense.expenseAmount != null && expense.expenseAmount > 0.00){
-            rec.XpenseApp__Expense_Amount__c = expense.expenseAmount;
+            rec.Expense_Amount__c = expense.expenseAmount;
         }if(expense.expenseDate != null){
-            rec.XpenseApp__Expense_Date__c = expense.expenseDate;	
+            rec.Expense_Date__c = expense.expenseDate;	
         }
         return rec;
     }

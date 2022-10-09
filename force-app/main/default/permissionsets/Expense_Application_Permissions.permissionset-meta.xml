@@ -35,7 +35,7 @@
     <description>This is the permission set for the expense application.</description>
     <fieldPermissions>
         <editable>false</editable>
-        <field>XpenseApp__Expense_Item__c.XpenseApp__Total_Expense__c</field>
+        <field>Expense_Item__c.Total_Expense__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
@@ -46,7 +46,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
-        <object>XpenseApp__Expense_Item__c</object>
+        <object>Expense_Item__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -55,7 +55,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
-        <object>XpenseApp__Expense_Spend_Control__c</object>
+        <object>Expense_Spend_Control__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -64,11 +64,11 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
-        <object>XpenseApp__Expense__c</object>
+        <object>Expense__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <tabSettings>
-        <tab>XpenseApp__Expense_Item__c</tab>
+        <tab>Expense_Item__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
@@ -76,11 +76,11 @@
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
-        <tab>XpenseApp__Expense_Spend_Control__c</tab>
+        <tab>Expense_Spend_Control__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
-        <tab>XpenseApp__Expense__c</tab>
+        <tab>Expense__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <userPermissions>
