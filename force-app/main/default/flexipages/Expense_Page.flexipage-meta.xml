@@ -3,6 +3,12 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentName>QuoteComponent</componentName>
+                <identifier>QuoteComponent</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
                 <componentName>TotalExpenses</componentName>
                 <identifier>TotalExpenses</identifier>
             </componentInstance>
@@ -17,6 +23,12 @@
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>LightningDataTableExpensesDemo</componentName>
+                <identifier>LightningDataTableExpensesDemo</identifier>
+            </componentInstance>
+        </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentName>ExpesnesOverview</componentName>

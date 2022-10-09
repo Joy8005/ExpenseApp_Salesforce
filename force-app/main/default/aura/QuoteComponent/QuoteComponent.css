@@ -1,0 +1,14 @@
+.THIS .Quote{
+    background-color: black;
+    color: blanchedalmond;
+    box-shadow: 10px 10px grey;
+    height: 10rem;
+    width: 100%;
+    margin: 1rem;
+}
+
+.THIS p{
+    padding: 3rem;
+    color: white;
+    font-size: 20px;
+}
