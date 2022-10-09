@@ -106,6 +106,7 @@
   </types>
   <types>
     <members>OpenWeatherMap</members>
+    <members>forismatic</members>
     <name>RemoteSiteSetting</name>
   </types>
   <types>
