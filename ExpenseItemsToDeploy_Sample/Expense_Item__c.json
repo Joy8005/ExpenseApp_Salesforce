@@ -2,127 +2,127 @@
     "records": [
         {
             "attributes": {
-                "type": "XpenseApp__Expense_Item__c",
-                "referenceId": "XpenseApp__Expense_Item__cRef1"
+                "type": "Expense_Item__c",
+                "referenceId": "Expense_Item__cRef1"
             },
             "Name": "In-House Food"
         },
         {
             "attributes": {
-                "type": "XpenseApp__Expense_Item__c",
-                "referenceId": "XpenseApp__Expense_Item__cRef2"
+                "type": "Expense_Item__c",
+                "referenceId": "Expense_Item__cRef2"
             },
             "Name": "Haircut"
         },
         {
             "attributes": {
-                "type": "XpenseApp__Expense_Item__c",
-                "referenceId": "XpenseApp__Expense_Item__cRef3"
+                "type": "Expense_Item__c",
+                "referenceId": "Expense_Item__cRef3"
             },
             "Name": "Laundry"
         },
         {
             "attributes": {
-                "type": "XpenseApp__Expense_Item__c",
-                "referenceId": "XpenseApp__Expense_Item__cRef4"
+                "type": "Expense_Item__c",
+                "referenceId": "Expense_Item__cRef4"
             },
             "Name": "Party"
         },
         {
             "attributes": {
-                "type": "XpenseApp__Expense_Item__c",
-                "referenceId": "XpenseApp__Expense_Item__cRef5"
+                "type": "Expense_Item__c",
+                "referenceId": "Expense_Item__cRef5"
             },
             "Name": "Electricity Bill"
         },
         {
             "attributes": {
-                "type": "XpenseApp__Expense_Item__c",
-                "referenceId": "XpenseApp__Expense_Item__cRef6"
+                "type": "Expense_Item__c",
+                "referenceId": "Expense_Item__cRef6"
             },
             "Name": "House Rent"
         },
         {
             "attributes": {
-                "type": "XpenseApp__Expense_Item__c",
-                "referenceId": "XpenseApp__Expense_Item__cRef7"
+                "type": "Expense_Item__c",
+                "referenceId": "Expense_Item__cRef7"
             },
             "Name": "Medical"
         },
         {
             "attributes": {
-                "type": "XpenseApp__Expense_Item__c",
-                "referenceId": "XpenseApp__Expense_Item__cRef8"
+                "type": "Expense_Item__c",
+                "referenceId": "Expense_Item__cRef8"
             },
             "Name": "Skin Care"
         },
         {
             "attributes": {
-                "type": "XpenseApp__Expense_Item__c",
-                "referenceId": "XpenseApp__Expense_Item__cRef9"
+                "type": "Expense_Item__c",
+                "referenceId": "Expense_Item__cRef9"
             },
             "Name": "Clothes"
         },
         {
             "attributes": {
-                "type": "XpenseApp__Expense_Item__c",
-                "referenceId": "XpenseApp__Expense_Item__cRef10"
+                "type": "Expense_Item__c",
+                "referenceId": "Expense_Item__cRef10"
             },
             "Name": "India"
         },
         {
             "attributes": {
-                "type": "XpenseApp__Expense_Item__c",
-                "referenceId": "XpenseApp__Expense_Item__cRef11"
+                "type": "Expense_Item__c",
+                "referenceId": "Expense_Item__cRef11"
             },
             "Name": "Stationary"
         },
         {
             "attributes": {
-                "type": "XpenseApp__Expense_Item__c",
-                "referenceId": "XpenseApp__Expense_Item__cRef12"
+                "type": "Expense_Item__c",
+                "referenceId": "Expense_Item__cRef12"
             },
             "Name": "Snapper"
         },
         {
             "attributes": {
-                "type": "XpenseApp__Expense_Item__c",
-                "referenceId": "XpenseApp__Expense_Item__cRef13"
+                "type": "Expense_Item__c",
+                "referenceId": "Expense_Item__cRef13"
             },
             "Name": "Food"
         },
         {
             "attributes": {
-                "type": "XpenseApp__Expense_Item__c",
-                "referenceId": "XpenseApp__Expense_Item__cRef14"
+                "type": "Expense_Item__c",
+                "referenceId": "Expense_Item__cRef14"
             },
             "Name": "University"
         },
         {
             "attributes": {
-                "type": "XpenseApp__Expense_Item__c",
-                "referenceId": "XpenseApp__Expense_Item__cRef15"
+                "type": "Expense_Item__c",
+                "referenceId": "Expense_Item__cRef15"
             },
             "Name": "Fun"
         },
         {
             "attributes": {
-                "type": "XpenseApp__Expense_Item__c",
-                "referenceId": "XpenseApp__Expense_Item__cRef16"
+                "type": "Expense_Item__c",
+                "referenceId": "Expense_Item__cRef16"
             },
             "Name": "Eye"
         },
         {
             "attributes": {
-                "type": "XpenseApp__Expense_Item__c",
-                "referenceId": "XpenseApp__Expense_Item__cRef17"
+                "type": "Expense_Item__c",
+                "referenceId": "Expense_Item__cRef17"
             },
             "Name": "Broadband"
         },
         {
             "attributes": {
-                "type": "XpenseApp__Expense_Item__c",
-                "referenceId": "XpenseApp__Expense_Item__cRef18"
+                "type": "Expense_Item__c",
+                "referenceId": "Expense_Item__cRef18"
             },
             "Name": "Spotify"
         }

@@ -7,7 +7,7 @@
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>XpenseApp__Expense_Item__c.XpenseApp__Total_Expense__c</column>
+            <column>Expense_Item__c.Total_Expense__c</column>
         </chartSummaries>
         <chartType>Donut</chartType>
         <enableHoverLabels>false</enableHoverLabels>
@@ -28,7 +28,7 @@
     </chart>
     <colorRanges>
         <aggregate>Sum</aggregate>
-        <columnName>XpenseApp__Expense_Item__c.XpenseApp__Total_Expense__c</columnName>
+        <columnName>Expense_Item__c.Total_Expense__c</columnName>
         <highBreakpoint>100.0</highBreakpoint>
         <highColor>#006714</highColor>
         <lowBreakpoint>50.0</lowBreakpoint>
@@ -37,11 +37,11 @@
     </colorRanges>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>XpenseApp__Expense_Item__c.XpenseApp__Total_Expense__c</field>
+        <field>Expense_Item__c.Total_Expense__c</field>
     </columns>
     <filter>
         <criteriaItems>
-            <column>XpenseApp__Expense_Item__c.XpenseApp__Total_Expense__c</column>
+            <column>Expense_Item__c.Total_Expense__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterThan</operator>
@@ -51,7 +51,7 @@
     <format>Summary</format>
     <formattingRules>
         <aggregate>Sum</aggregate>
-        <columnName>XpenseApp__Expense_Item__c.XpenseApp__Total_Expense__c</columnName>
+        <columnName>Expense_Item__c.Total_Expense__c</columnName>
         <values>
             <backgroundColor>#B50E03</backgroundColor>
             <rangeUpperBound>50.0</rangeUpperBound>
@@ -74,7 +74,7 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>CustomEntityCustomEntity$XpenseApp__Expense_Item__c$XpenseApp__Expense__c</reportType>
+    <reportType>CustomEntityCustomEntity$Expense_Item__c$Expense__c</reportType>
     <scope>user</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>

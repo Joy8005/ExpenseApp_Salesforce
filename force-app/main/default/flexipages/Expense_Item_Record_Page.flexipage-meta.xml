@@ -156,7 +156,7 @@
     </flexiPageRegions>
     <masterLabel>Expense Item Record Page</masterLabel>
     <parentFlexiPage>flexipage__default_rec_L</parentFlexiPage>
-    <sobjectType>XpenseApp__Expense_Item__c</sobjectType>
+    <sobjectType>Expense_Item__c</sobjectType>
     <template>
         <name>flexipage:recordHomeTemplateDesktop</name>
     </template>
