@@ -17,7 +17,7 @@
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Expense_Item__c.Total_Expense__c</column>
+                    <column>XpenseApp__Expense_Item__c.XpenseApp__Total_Expense__c</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
                 <decimalPrecision>-1</decimalPrecision>

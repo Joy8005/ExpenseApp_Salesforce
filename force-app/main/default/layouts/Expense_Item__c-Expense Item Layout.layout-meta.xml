@@ -13,7 +13,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Total_Expense__c</field>
+                <field>XpenseApp__Total_Expense__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -55,7 +55,7 @@
     </layoutSections>
     <relatedLists>
         <fields>NAME</fields>
-        <relatedList>Expense__c.Expense_Item__c</relatedList>
+        <relatedList>XpenseApp__Expense__c.XpenseApp__Expense_Item__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

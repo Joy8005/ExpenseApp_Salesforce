@@ -10,18 +10,18 @@ Aggregate functions become a more powerful tool to generate reports when you use
 */
     public ExpItemEmailTemplateController()
     {
-        lstAR = [select Name, sum(Total_Expense__c) totalExpense 
-                                               from Expense_Item__c  
-                                               where Total_Expense__c > 0.00
+        lstAR = [select Name, sum(XpenseApp__Total_Expense__c) totalExpense 
+                                               from XpenseApp__Expense_Item__c  
+                                               where XpenseApp__Total_Expense__c > 0.00
                                                group by Name]; 
         
         //Get the sum of total expenses (aggregateresult) 
-        AggregateResult expenses = [SELECT SUM(Total_Expense__c) totalExpense FROM Expense_Item__c];
+        AggregateResult expenses = [SELECT SUM(XpenseApp__Total_Expense__c) totalExpense FROM XpenseApp__Expense_Item__c];
         fullExpense = (Decimal)expenses.get('totalExpense');
         
         //Get the spend Control value
         spendControl = (Decimal)[select Id, Spend_Control__c
-                                 from Expense_Spend_Control__c].Spend_Control__c;
+                                 from XpenseApp__Expense_Spend_Control__c].Spend_Control__c;
     }
     
     public list<OppClass> getResults()

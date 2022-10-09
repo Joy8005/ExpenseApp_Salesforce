@@ -7,7 +7,7 @@
         <formFactor>Small</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
-        <pageOrSobjectType>Expense_Item__c</pageOrSobjectType>
+        <pageOrSobjectType>XpenseApp__Expense_Item__c</pageOrSobjectType>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
@@ -16,7 +16,7 @@
         <formFactor>Large</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
-        <pageOrSobjectType>Expense_Item__c</pageOrSobjectType>
+        <pageOrSobjectType>XpenseApp__Expense_Item__c</pageOrSobjectType>
     </actionOverrides>
     <description>Tracks all the info of my expenses.</description>
     <formFactors>Small</formFactors>
@@ -27,10 +27,10 @@
     <label>My Expenses</label>
     <navType>Standard</navType>
     <tabs>Expense_Page</tabs>
-    <tabs>Expense_Item__c</tabs>
-    <tabs>Expense__c</tabs>
+    <tabs>XpenseApp__Expense_Item__c</tabs>
+    <tabs>XpenseApp__Expense__c</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
-    <tabs>Expense_Spend_Control__c</tabs>
+    <tabs>XpenseApp__Expense_Spend_Control__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

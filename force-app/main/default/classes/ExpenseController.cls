@@ -1,7 +1,7 @@
 public class ExpenseController {
     @AuraEnabled
     public static Decimal TotalExpenses(){
-        AggregateResult expenses = [SELECT SUM(Total_Expense__c)totalExpense FROM Expense_Item__c];
+        AggregateResult expenses = [SELECT SUM(XpenseApp__Total_Expense__c)totalExpense FROM XpenseApp__Expense_Item__c];
         Decimal TotalExpense = (Decimal)expenses.get('totalExpense');
         return TotalExpense;
     }

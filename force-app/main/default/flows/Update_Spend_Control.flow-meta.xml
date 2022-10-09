@@ -49,7 +49,7 @@
                 <stringValue>SC-0001</stringValue>
             </value>
         </filters>
-        <object>Expense_Spend_Control__c</object>
+        <object>XpenseApp__Expense_Spend_Control__c</object>
         <outputReference>CurrentSpendControlVariable</outputReference>
         <queriedFields>Id</queriedFields>
         <queriedFields>Spend_Control__c</queriedFields>
@@ -140,7 +140,7 @@
         <isCollection>false</isCollection>
         <isInput>false</isInput>
         <isOutput>false</isOutput>
-        <objectType>Expense_Spend_Control__c</objectType>
+        <objectType>XpenseApp__Expense_Spend_Control__c</objectType>
     </variables>
     <variables>
         <name>Spend_Control_Data</name>
@@ -148,6 +148,6 @@
         <isCollection>false</isCollection>
         <isInput>false</isInput>
         <isOutput>false</isOutput>
-        <objectType>Expense_Spend_Control__c</objectType>
+        <objectType>XpenseApp__Expense_Spend_Control__c</objectType>
     </variables>
 </Flow>
