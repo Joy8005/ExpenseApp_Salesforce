@@ -9,6 +9,7 @@
     <members>OpenWeatherMapAPI</members>
     <members>SpendControlEmail</members>
     <members>TotalExpensesClass</members>
+    <members>QuoteOfTheDayApexController</members>
     <name>ApexClass</name>
   </types>
   <types>
@@ -31,6 +32,7 @@
     <members>LightningDataTableExpensesDemo</members>
     <members>TotalExpenses</members>
     <members>WeatherInfo</members>
+    <members>QuoteComponent</members>
     <name>AuraDefinitionBundle</name>
   </types>
   <types>
@@ -104,6 +106,7 @@
   </types>
   <types>
     <members>OpenWeatherMap</members>
+    <members>forismatic</members>
     <name>RemoteSiteSetting</name>
   </types>
   <types>

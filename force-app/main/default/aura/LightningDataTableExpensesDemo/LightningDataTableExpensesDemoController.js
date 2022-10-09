@@ -32,7 +32,7 @@
         var createExpense = $A.get("e.force:createRecord");
         // Parameters like apiName and defaultValues are set
         createExpense.setParams({
-            "entityApiName": "Expense__c"
+            "entityApiName": "XpenseApp__Expense__c"
         });
         // Event fired and new contact dialog open
         createExpense.fire();
@@ -43,7 +43,7 @@
         var createExpenseItem = $A.get("e.force:createRecord");
         // Parameters like apiName and defaultValues are set
         createExpenseItem.setParams({
-            "entityApiName": "Expense_Item__c"
+            "entityApiName": "XpenseApp__Expense_Item__c"
         });
         // Event fired and new contact dialog open
         createExpenseItem.fire();
