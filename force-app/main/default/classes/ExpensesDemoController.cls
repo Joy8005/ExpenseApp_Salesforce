@@ -5,7 +5,7 @@ public class ExpensesDemoController {
         Expense[] allExpenses = new Expense[]{};
             //getting each record from the query
             for(Expense__c myExpense : [select Id, Expense_Item__r.Name, Expense_Amount__c, Expense_Date__c
-                                        from _c
+                                        from Expense__c
                                         where Expense_Amount__c > 0.00
                                         order by Expense_Date__c DESC]){
                                             //storing the record in to a list and processing it using class
