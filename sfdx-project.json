@@ -1,15 +1,18 @@
 {
-  "packageDirectories": [
-    {
-      "path": "force-app",
-      "default": true,
-      "package": "XpenseApp",
-      "versionNumber": "1.0.0.NEXT",
-      "versionName": "v1 version",
-      "versionDescription": "This is the first version of the Xpense application"
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true,
+            "package": "XpenseApp_new",
+            "versionNumber": "1.0.0.NEXT",
+            "versionName": "Version 1.0.0.NEXT",
+            "versionDescription": "This is the first version of the Xpense application"
+        }
+    ],
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "55.0",
+    "packageAliases": {
+        "XpenseApp_new": "0Ho5g000000oMD2CAM"
     }
-  ],
-  "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "55.0"
 }
